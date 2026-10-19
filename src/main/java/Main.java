@@ -16,8 +16,8 @@ public class Main {
         ShoppingCart cart = new ShoppingCart(food);
 
         // Посчитай и выведи на экран значения для созданной корзины
-        System.out.println("Общая сумма без скидки: " + cart.sumWithOutDiscount());
-        System.out.println("Общая сумма со скидкой: " + cart.sumWithDiscount());
-        System.out.println("Вегетарианские продукты без скидки: " + cart.sumWithOutDiscount());
+        System.out.printf("Общая сумма без скидки: %.2f%n", cart.sumWithOutDiscount());
+        System.out.printf("Общая сумма со скидкой: %.2f%n", cart.sumWithDiscount());
+        System.out.printf("Вегетарианские продукты без скидки", cart.sumWithOutDiscount());
     }
 }

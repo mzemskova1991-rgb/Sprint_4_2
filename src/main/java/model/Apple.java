@@ -14,9 +14,6 @@ public class Apple extends Food implements Discountable {
 
     @Override
     public double getDiscount() {
-        if (colour.equals(Colour.RED)) {
-            return Discount.RED_APPLE;
-        }
-        return 0;
+        return colour.equals(Colour.RED) ? Discount.RED_APPLE : 0;
     }
 }  // <-- закрывающая скобка класса должна быть ПОСЛЕ метода
